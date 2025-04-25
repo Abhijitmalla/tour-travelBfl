@@ -1,0 +1,58 @@
+:root{
+    --color-primary: #4F46E5;         /* Indigo */
+    --color-secondary: #10B981;       /* Emerald */
+  
+    /* Gradient Example */
+    --color-gradient: linear-gradient(135deg, #4F46E5, #10B981);
+  
+    /* Text Colors */
+    --color-text: #1F2937;            /* Gray 800 */
+    --color-text-light: #6B7280;      /* Gray 500 */
+  
+    /* Backgrounds */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-white-dream: #f9fafb;     /* Light dreamy white */
+    --color-body: #f3f4f6;            /* Gray-100 */
+    --color-card-bg: #ffffff;
+  
+    /* Inputs */
+    --color-input-bg: #f9fafb;
+    --color-input-border: #d1d5db;    /* Gray 300 */
+  
+  }
+  .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white-dream);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  .logo{
+    color: var(--color-black);
+  }
+ @media screen and (max-width:768px){
+    .navBar{
+        position: absolute;
+        background: black;
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: 6rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+        transition: 0.3s ease-in-out;
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding: .5rem 0;
+        }
+    }
+ }

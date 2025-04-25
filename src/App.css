@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+/* colors and styling */
+:root{
+  --color-primary: #4F46E5;         /* Indigo */
+  --color-secondary: #10B981;       /* Emerald */
+
+  /* Gradient Example */
+  --color-gradient: linear-gradient(135deg, #4F46E5, #10B981);
+
+  /* Text Colors */
+  --color-text: #1F2937;            /* Gray 800 */
+  --color-text-light: #6B7280;      /* Gray 500 */
+
+  /* Backgrounds */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-white-dream: #f9fafb;     /* Light dreamy white */
+  --color-body: #f3f4f6;            /* Gray-100 */
+  --color-card-bg: #ffffff;
+
+  /* Inputs */
+  --color-input-bg: #f9fafb;
+  --color-input-border: #d1d5db;    /* Gray 300 */
+
+}
+a{
+  text-decoration:none;
+}
+li{
+  list-style: none;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+.btn{
+  padding: 1rem 1.5rem;
+  background: var(--color-gradient);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn a{
+  color: var(--color-white);
+  font-weight: 500;
+}
+.btn:hover{
+  background: var(--color-secondary);
+}
+img,video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+body{
+  background: var(--color-body);
+}
